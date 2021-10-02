@@ -17,10 +17,25 @@ Karthik Chandra| 191CS222
 - This platform can be accessed by every student and faculty of the institute through internet-connected devices like computers or a mobile phone with the aid of his/her iris login password.
 - On the other hand, admin will have the authority to accept or reject the booking slot request from student or faculty.
 ## Flow char
-![flow char image2](https://user-images.githubusercontent.com/91780372/135726758-8b652c07-6ebe-4c2b-be30-08df9c1683f9.png)
+![flow char image3png](https://user-images.githubusercontent.com/91780372/135726892-a38f3d48-7ad4-4f26-a188-040188bf0f11.png)
 ## Project Requirments and Features
-### Requirments
-1. 
+#### User's in the system
+- Administrator
+- Faculty
+- user(student,faculty any valid member of Institute with username and password).
+### Basic Requirments
+1. All users are required to sign up for the application.
+2. During the signup process, the application must store the following information  about the user. 
+   - Username
+   - Password
+3. Every user can login and logout of the system.
+4. Login authentication should be done by using NITK email id.
+5. Our project will contain the following booking systems
+   - Classrooms
+   - Seminar halls
+   - Sports court
+   - Guest house
+   - Mess
 ## Software Specification
 ### operation system server
 - Windows:  8 or newer
@@ -42,3 +57,6 @@ Hardware|Minimum|Recommended
 Processor|1 GHz of X86 or X64 processor|2 GHz of X86 or X64
 Memory|1 GB|4 GB
 Hard drive|32 GB|64 GB
+## Dataflow diagram
+### High level
+
