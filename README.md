@@ -16,6 +16,8 @@ Karthik Chandra| 191CS222
 - This booking platform is a one-stop source for booking various entities like classrooms, seminar halls, etc.
 - This platform can be accessed by every student and faculty of the institute through internet-connected devices like computers or a mobile phone with the aid of his/her iris login password.
 - On the other hand, admin will have the authority to accept or reject the booking slot request from student or faculty.
+## Flow char
+![flow char image2](https://user-images.githubusercontent.com/91780372/135726758-8b652c07-6ebe-4c2b-be30-08df9c1683f9.png)
 ## Project Requirments and Features
 ### Requirments
 1. 
