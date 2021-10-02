@@ -18,7 +18,7 @@ Karthik Chandra| 191CS222
 - On the other hand, admin will have the authority to accept or reject the booking slot request from student or faculty.
 ## Software Specification
 ### operation system server
-- Windows:  7 or newer
+- Windows:  8 or newer
 - Mac: OS X v10.7 or higher
 - Linux: ubuntu
 ### Tools
