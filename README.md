@@ -15,7 +15,7 @@ The project is aimed to minimize the manual work, the number of people involved,
 
 The project will be a web-based portal to make the booking system accessible on the go, making it multi-device compatible.
 The project is intended for the people of the Institution with a valid username and password provided by the institute. A user can access the portal's functionalities only after authentication of username and password.On the other hand, admin will have the authority to accept or reject the booking slot request from student or faculty.
-## Flow char
+## Flow chart
 ![flow chart image3png](https://user-images.githubusercontent.com/91780372/135726892-a38f3d48-7ad4-4f26-a188-040188bf0f11.png)
 ## Project Requirements and Features
 #### Users in the system
