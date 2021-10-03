@@ -35,6 +35,16 @@ The project is intended for the people of the Institution with a valid username 
    - Sports court
    - Guest house
    - Mess
+## Non functional Requirements
+- **Scalability**: since we are using mysql with proper data integrity models, scalability in terms of data management is achieved. Also scalability in terms of server management is taken care with Nodejs.
+- **Relability and Availability**: This is taken care by Node.js, since Node.js increases performance and handles a lot of requests. It also overcomes large data processing 
+challenges.
+- **Maintainability and Manageability**: This is satisfied properly as we are following a proper software engineering priniciples and also we are using frameworks like ReactJs which provied us to create different components to maintain the code properly.
+- **Usability**: This web based application is user friendly with best user interface.
+- **Protabilty and Compatibilty**: Protability and Compatibilty of the application on other devices or browsers or networks is possible, since we are using latest technologies and framework for the project.
+- **Performance**: Performance of the application is high,as the request time, response time and through output time is very less.
+- **Security**: Application provide a proper data security using mysql and security of proper data transfer is taken care by Node.js
+
 ## Software Specification
 ### operation system server
 - Windows:  8 or newer
