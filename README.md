@@ -17,7 +17,7 @@ The project will be a web-based portal to make the booking system accessible on 
 The project is intended for the people of the Institution with a valid username and password provided by the institute. A user can access the portal's functionalities only after authentication of username and password.On the other hand, admin will have the authority to accept or reject the booking slot request from student or faculty.
 ## Flow chart
 ![flow chart image3png](https://user-images.githubusercontent.com/91780372/135726892-a38f3d48-7ad4-4f26-a188-040188bf0f11.png)
-## Project Requirements and Features
+## Project Requirements
 #### Users in the system
 - Administrator
 - Faculty
@@ -35,6 +35,7 @@ The project is intended for the people of the Institution with a valid username 
    - Sports court
    - Guest house
    - Mess
+## Functional requirements/Features
 ## Non functional Requirements
 - **Scalability**: since we are using mysql with proper data integrity models, scalability in terms of data management is achieved. Also scalability in terms of server management is taken care with Nodejs.
 - **Relability and Availability**: This is taken care by Node.js, since Node.js increases performance and handles a lot of requests. It also overcomes large data processing 
@@ -67,5 +68,5 @@ Processor|1 GHz of X86 or X64 processor|2 GHz of X86 or X64
 Memory|1 GB|4 GB
 Hard drive|32 GB|64 GB
 ## Dataflow diagram
-### High level
+### High level Diagram
 ![IMAGE](https://user-images.githubusercontent.com/91780372/135727128-b22f6eb1-a35f-4f30-ac75-7190ba9706a7.jpg)
