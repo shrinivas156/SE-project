@@ -4,7 +4,7 @@ Name|RollNO
 --------------|--------------
 Shrinivas Bagadi| 191CS156
 Darshan A V| 191CS219
-Shyam Sundar| 191CS157
+Shyam Sundar N R| 191CS157
 Lokeshwar Reddy| 191CS161
 Karthik Chandra| 191CS222
 ## Project Objective
@@ -42,62 +42,62 @@ The project is intended for the people of the Institution with a valid username 
   -The Users(student / faculty / any valid member with id and password) who seek to book the variety of services the website offers.
  - **Basic requirements** :
    - All the users are required to signup to enjoy the services of our application.
-   - As during the sign up the application will store the following information about the user :
-       -Username /Email ID
-        -Password
-    -Every user can login and logout of the system through any compatible browser.
-    -Since the application is done exclusively for nitk students, the authentication should be done using nitk mail id only.
+   - During sign up the application will store the following information about the user :
+       - Username /Email ID
+       - Password
+    - Every user can login and logout of the system through any compatible browser.
+    - Since the application is done exclusively for nitk students, the authentication should be done using nitk mail id only.
     
-    -Our project will provide the following booking services to enjoy
-        -classrooms
-        -seminar halls
-        -sport Courts
-        -Guest Houses
-        -Mess
+    - Our project will provide the following booking services to enjoy
+        - classrooms
+        - seminar halls
+        - sport Courts
+        - Guest Houses
+        - Mess
+
+  - **Classrooms**
+     - A user will be able to
+        - View booked rooms / room availability.
+        - Book a room if available.
+        - Cancel the room booking if not required.
+     - The admin who handles can
+        - Approve or reject a requested classroom (in case of clash, faculty will be given preference over a student or first come first serve is followed) 
+        - change the availability status of a classroom
+        - Add/Remove a slot or a classroom data
         
-     - **Classrooms**
-        -The faculty enjoys the following
-           -View the booked / room availability.
-           -Book a room if available.
-           -Cancel the room booking if not required.
-        -The admin who handles has to look into
-           -Approve or reject a booked classroom.
-           -Forbid a classroom as unavailable.
-         -The users other than faculty have these services at their disposal
-           -View the classroom  and faculty its alloted  to, so that they move to appropraite classrooms.
-     - **Seminar halls**
-         -The faculty enjoys the following
-           -In case the faculty has any seminar to be conducted by him or guest professor he can directly book any which are available.
-         -The  admin has to look into the flowing 
-           -View the hall booked and view the available halls.
-           -Cancel a hall booking if required and asked by the user.
-           -Book a hall if available as per user request 
-           -Accept or reject the request from the students for the hall booking.
-          -The users other than faculty have these services
-            -View the hall booked or the halls which are available.
-            -Request for the hall booking or cancellation.
-     - **Sport Courts** 
-         -The admin looks into the foolowing matters
-           -View the slot booked or the slots which are available for different sports.
-           -Cancel a slot booking if the user cant make it.
-           -The admin can forbid any user to book incase of any misconduct.
-         -The user enjoys
-           -Book a slot for any particular sports based on any availability.
-           -Cancel the slot prior to the alloted time.
-     - **Guest Houses**
-         -The admin takes care of
-            -Once the allocater accepts to give the rooms requested,the admin can said the room allocation confirmation mail to the user.
-         -The user can book a guest house according to the need and by selecting among the guest rooms which are available.
-     - **Mess**
-         -The admin shoulders the responsibilty of the following
-            -He has to allot the requested mess to the person based on first come first serve.
-            -If the user hasn't specified any priorities for the mess block, the user allots the default mess based on food habits.
-         -The user gets to enjoy
-           -Choosing the mess based on food habits and the block number.
-           
-     -All the requests will contain information about the purpose of booking, the room he/she prefers and the required capacity.
-     -ALL these requests will travel to the admin for verification and approval, if approved by admin the website would show as booked or booking confirmed.
-     -If there is no word from the admin,the request will automatically get cancelled after 5 days or the time slot it is booked for whichever is sooner.
+  - **Seminar halls**
+      - A faculty enjoys the following
+        - In case the faculty has any seminar to be conducted by him or guest professor he can directly book any which are available.
+      - The  admin has to look into the flowing 
+        - View the hall booked and view the available halls.
+        - Cancel a hall booking if required and asked by the user.
+        - Book a hall if available as per user request 
+        - Accept or reject the request from the students for the hall booking.
+       - The users other than faculty have these services
+         - View the hall booked or the halls which are available.
+         - Request for the hall booking or cancellation.
+  - **Sport Courts** 
+      - The admin looks into the foolowing matters
+        - View the slot booked or the slots which are available for different sports.
+        - Cancel a slot booking if the user cant make it.
+        - The admin can forbid any user to book incase of any misconduct.
+      - The user enjoys
+        - Book a slot for any particular sports based on any availability.
+        - Cancel the slot prior to the alloted time.
+  - **Guest Houses**
+      - The admin takes care of
+         - Once the allocater accepts to give the rooms requested,the admin can said the room allocation confirmation mail to the user.
+      - The user can book a guest house according to the need and by selecting among the guest rooms which are available.
+  - **Mess**
+      - The admin shoulders the responsibilty of the following
+         - He has to allot the requested mess to the person based on first come first serve.
+         - If the user hasn't specified any priorities for the mess block, the user allots the default mess based on food habits.
+      - The user gets to enjoy
+        - Choosing the mess based on food habits and the block number.
+
+  - All the requests will contain information about the purpose of booking, the room he/she prefers and the required capacity.
+  - ALL these requests will travel to the admin for verification and approval, if approved by admin the website would show as booked or booking confirmed.
+  - If there is no word from the admin,the request will automatically get cancelled after 5 days or the time slot it is booked for whichever is sooner.
 ## Non functional Requirements
 - **Scalability**: since we are using mysql with proper data integrity models, scalability in terms of data management is achieved. Also scalability in terms of server management is taken care with Nodejs.
 - **Relability and Availability**: This is taken care by Node.js, since Node.js increases performance and handles a lot of requests. It also overcomes large data processing 
