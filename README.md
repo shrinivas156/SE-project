@@ -20,14 +20,13 @@ The project is intended for the people of the Institution with a valid username 
 ## Project Requirements
 #### Users in the system
 - Administrator
-- Faculty
 - user(student,faculty any valid member of Institute with username and password).
-- 
+
 ## Functional requirements/Features
  - **Users in the system** :
-  -There are mainly two users in the system 
-  -Admins who approve the booking system.
-  -The Users(student / faculty / any valid member with id and password) who seek to book the variety of services the website offers.
+  There are mainly two users in the system 
+   - Admins who approve the booking system.
+   - The Users(student / faculty / any valid member with id and password) who seek to book the variety of services the website offers.
   
  - **Basic requirements** :
    - All the users are required to signup to enjoy the services of our application.
