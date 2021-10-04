@@ -22,24 +22,13 @@ The project is intended for the people of the Institution with a valid username 
 - Administrator
 - Faculty
 - user(student,faculty any valid member of Institute with username and password).
-### Basic Requirments
-1. All users are required to signin for the application.
-2. During the signup process, the application must store the following information  about the user. 
-   - Username
-   - Password
-3. Every user can login and logout of the system.
-4. Login authentication should be done by using NITK email id.
-5. Our project will contain the following booking systems
-   - Classrooms
-   - Seminar halls
-   - Sports court
-   - Guest house
-   - Mess
+- 
 ## Functional requirements/Features
  - **Users in the system** :
   -There are mainly two users in the system 
   -Admins who approve the booking system.
   -The Users(student / faculty / any valid member with id and password) who seek to book the variety of services the website offers.
+  
  - **Basic requirements** :
    - All the users are required to signup to enjoy the services of our application.
    - During sign up the application will store the following information about the user :
@@ -47,7 +36,6 @@ The project is intended for the people of the Institution with a valid username 
        - Password
     - Every user can login and logout of the system through any compatible browser.
     - Since the application is done exclusively for nitk students, the authentication should be done using nitk mail id only.
-    
     - Our project will provide the following booking services to enjoy
         - classrooms
         - seminar halls
@@ -76,6 +64,7 @@ The project is intended for the people of the Institution with a valid username 
        - The users other than faculty have these services
          - View the hall booked or the halls which are available.
          - Request for the hall booking or cancellation.
+        
   - **Sport Courts** 
       - The admin looks into the foolowing matters
         - View the slot booked or the slots which are available for different sports.
@@ -84,10 +73,12 @@ The project is intended for the people of the Institution with a valid username 
       - The user enjoys
         - Book a slot for any particular sports based on any availability.
         - Cancel the slot prior to the alloted time.
+       
   - **Guest Houses**
       - The admin takes care of
          - Once the allocater accepts to give the rooms requested,the admin can said the room allocation confirmation mail to the user.
       - The user can book a guest house according to the need and by selecting among the guest rooms which are available.
+     
   - **Mess**
       - The admin shoulders the responsibilty of the following
          - He has to allot the requested mess to the person based on first come first serve.
@@ -98,13 +89,14 @@ The project is intended for the people of the Institution with a valid username 
   - All the requests will contain information about the purpose of booking, the room he/she prefers and the required capacity.
   - ALL these requests will travel to the admin for verification and approval, if approved by admin the website would show as booked or booking confirmed.
   - If there is no word from the admin,the request will automatically get cancelled after 5 days or the time slot it is booked for whichever is sooner.
+ 
 ## Non functional Requirements
 - **Scalability**: since we are using mysql with proper data integrity models, scalability in terms of data management is achieved. Also scalability in terms of server management is taken care with Nodejs.
-- **Relability and Availability**: This is taken care by Node.js, since Node.js increases performance and handles a lot of requests. It also overcomes large data processing 
+- **Reliability and Availability**: This is taken care by Node.js, since Node.js increases performance and handles a lot of requests. It also overcomes large data processing 
 challenges.
 - **Maintainability and Manageability**: This is satisfied properly as we are following a proper software engineering priniciples and also we are using frameworks like ReactJs which provied us to create different components to maintain the code properly.
 - **Usability**: This web based application is user friendly with best user interface.
-- **Protabilty and Compatibilty**: Protability and Compatibilty of the application on other devices or browsers or networks is possible, since we are using latest technologies and framework for the project.
+- **Portabilty and Compatibilty**: Protability and Compatibilty of the application on other devices or browsers or networks is possible, since we are using latest technologies and framework for the project.
 - **Performance**: Performance of the application is high,as the request time, response time and through output time is very less.
 - **Security**: Application provide a proper data security using mysql and security of proper data transfer is taken care by Node.js
 
