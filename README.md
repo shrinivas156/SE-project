@@ -120,6 +120,15 @@ Hardware|Minimum|Recommended
 Processor|1 GHz of X86 or X64 processor|2 GHz of X86 or X64
 Memory|1 GB|4 GB
 Hard drive|32 GB|64 GB
+
+## Activity flow diagram
+### Home
+![activity 1](/Diagrams/homeActivity.png)
+### Admin
+![admin activity](/Diagrams/adminActivity.png)
+### User
+![User activity](/Diagrams/userActivity.png)
+
 ## Dataflow diagram
 ### High level Diagram
 ![IMAGE](https://user-images.githubusercontent.com/91780372/135727128-b22f6eb1-a35f-4f30-ac75-7190ba9706a7.jpg)
