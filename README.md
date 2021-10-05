@@ -122,22 +122,22 @@ Memory|1 GB|4 GB
 Hard drive|32 GB|64 GB
 
 ##System Architecture
-![3 tier architecture](/Diagrams/system_architecture.jpeg)
+! [3 tier architecture](/Diagrams/system_architecture.jpeg)
 - The architecture of our application is based on a typical MVC model. Our Client tier (View) will be written in Javascript, HTML, and CSS, using ReactJS as the framework. This level of the architecture is what the user will interact with to access the features of our application.
 - The Business Logic Tier (Controller) will be written using NodeJs and ExpressJS, and this tier represents the Application Server that will act as a bridge of communication for the Client Tier and Database Tier. This tier will serve HTML pages to the user’s device and accept HTTP requests from the user and follow with the appropriate response.
 - Our Database Tier (Model) will be hosting MongoDB. This is where we will store all of the crucial data our application needs to function.
 ## Activity flow diagram
 ### Home
-![activity 1](/Diagrams/"Activity diagrams"/homeActivity.png)
+! [activity 1](/Diagrams/"Activity diagrams"/homeActivity.png)
 ### Admin
-![admin activity](/Diagrams/"Activity diagrams"/adminActivity.png)
+! [admin activity](/Diagrams/"Activity diagrams"/adminActivity.png)
 ### User
-![User activity](/Diagrams/"Activity diagrams"/userActivity.png)
+! [User activity](/Diagrams/"Activity diagrams"/userActivity.png)
 
 ## Dataflow diagram
-![I](/Diagrams/"data flow diagrams"/i.jpg)
-![II](/Diagrams/"data flow diagrams"/ii.jpg)
-![III](/Diagrams/"data flow diagrams"/iii.jpg)
+! [I](/Diagrams/"data flow diagrams"/i.jpg)
+! [II](/Diagrams/"data flow diagrams"/ii.jpg)
+! [III](/Diagrams/"data flow diagrams"/iii.jpg)
 
-##Other documents
-[PPT](/Documents/SE_midsem_project_12_cs303.pptx)
+## Other documents
+#### [PPT](/Documents/SE_midsem_project_12_cs303.pptx)
