@@ -121,7 +121,7 @@ Processor|1 GHz of X86 or X64 processor|2 GHz of X86 or X64
 Memory|1 GB|4 GB
 Hard drive|32 GB|64 GB
 
-## System Architecture
+##System Architecture
 ![3 tier architecture](/Diagrams/system_architecture.jpeg)
 - The architecture of our application is based on a typical MVC model. Our Client tier (View) will be written in Javascript, HTML, and CSS, using ReactJS as the framework. This level of the architecture is what the user will interact with to access the features of our application.
 - The Business Logic Tier (Controller) will be written using NodeJs and ExpressJS, and this tier represents the Application Server that will act as a bridge of communication for the Client Tier and Database Tier. This tier will serve HTML pages to the user’s device and accept HTTP requests from the user and follow with the appropriate response.
@@ -135,9 +135,12 @@ Hard drive|32 GB|64 GB
 ![User activity](/Diagrams/ActivityDiagrams/userActivity.png)
 
 ## Dataflow diagram
+### I
 ![I](/Diagrams/DataFlowDiagrams/i.jpg)
+### II
 ![II](/Diagrams/DataFlowDiagrams/ii.jpg)
+### III
 ![III](/Diagrams/DataFlowDiagrams/iii.jpg)
 
 ## Other documents
-#### [PPT](/Documents/SE_midsem_project_12_cs303.pptx)
+### [PPT](/Documents/SE_midsem_project_12_cs303.pptx)
