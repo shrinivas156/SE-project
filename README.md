@@ -121,14 +121,22 @@ Processor|1 GHz of X86 or X64 processor|2 GHz of X86 or X64
 Memory|1 GB|4 GB
 Hard drive|32 GB|64 GB
 
+##System Architecture
+![3 tier architecture](/Diagrams/system_architecture.jpeg)
+- The architecture of our application is based on a typical MVC model. Our Client tier (View) will be written in Javascript, HTML, and CSS, using ReactJS as the framework. This level of the architecture is what the user will interact with to access the features of our application.
+- The Business Logic Tier (Controller) will be written using NodeJs and ExpressJS, and this tier represents the Application Server that will act as a bridge of communication for the Client Tier and Database Tier. This tier will serve HTML pages to the user’s device and accept HTTP requests from the user and follow with the appropriate response.
+- Our Database Tier (Model) will be hosting MongoDB. This is where we will store all of the crucial data our application needs to function.
 ## Activity flow diagram
 ### Home
-![activity 1](/Diagrams/homeActivity.png)
+![activity 1](/Diagrams/"Activity diagrams"/homeActivity.png)
 ### Admin
-![admin activity](/Diagrams/adminActivity.png)
+![admin activity](/Diagrams/"Activity diagrams"/adminActivity.png)
 ### User
-![User activity](/Diagrams/userActivity.png)
+![User activity](/Diagrams/"Activity diagrams"/userActivity.png)
 
 ## Dataflow diagram
-### High level Diagram
-![IMAGE](https://user-images.githubusercontent.com/91780372/135727128-b22f6eb1-a35f-4f30-ac75-7190ba9706a7.jpg)
+![I](/Diagrams/"data flow diagrams"/i.jpg)
+![II](/Diagrams/"data flow diagrams"/ii.jpg)
+![III](/Diagrams/"data flow diagrams"/iii.jpg)
+
+
