@@ -139,4 +139,5 @@ Hard drive|32 GB|64 GB
 ![II](/Diagrams/"data flow diagrams"/ii.jpg)
 ![III](/Diagrams/"data flow diagrams"/iii.jpg)
 
-
+##Other documents
+[PPT](/Documents/SE_midsem_project_12_cs303.pptx)
