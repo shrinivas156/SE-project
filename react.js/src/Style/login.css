@@ -1,0 +1,83 @@
+
+.loginmodal{
+    background:linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.3)
+    );
+    border-radius:3rem;
+}
+.login{
+    
+    width: 100%;
+    color: dodgerblue;
+    text-align: center;
+    margin: 40px 0;
+    font-weight: 300;
+    font-size: xx-large;
+
+}
+#username,#password,#submit{
+    box-sizing: border-box;
+    color: black;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    
+    margin-bottom: 25px;
+    
+    
+}
+#username{
+    border: none;
+    outline: none;
+    border-bottom: 2px dodgerblue solid;
+    background: transparent;
+
+}
+#password{
+    border: none;
+    outline: none;
+    border-bottom: 2px dodgerblue solid;
+    background: transparent;
+
+}
+#submit{
+    background-color: dodgerblue;
+    opacity: 0.8;
+    border: none;
+    outline: none;
+    opacity: 1.5;
+    padding: 0;
+    color: white;
+    line-height: 38px;
+}
+#submit:hover{
+    font-size: 22px;
+}
+
+
+.bottom{
+    color: black;
+    float: left;
+    font-size: 15px;
+    
+}
+.footer{
+    color: black;
+    float: left;
+    font-size:15px;
+    margin-left: 31px;
+    
+
+    
+}
+.signin{
+    position: relative;
+    top: 20px;
+    right: 2px;
+    color: dodgerblue;
+    font-family: 600;
+    font-family: monospace;
+
+}
