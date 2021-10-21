@@ -1,9 +1,8 @@
 const pointer= require('../../model/adminclassroom');
 
-exports.adminclass=  (req,res) => {
-    var id= req.body.id;
-    var capacity = req.body.capacity;
-    pointer.classroom.findOneAndUpdate({_id:id},{capacity:capacity}).then(response =>{
+exports.userclass=  (req,res) => {
+    
+    pointer.classroom.find({}).then(response =>{
         
             res.status(200).json({'login':response});
        

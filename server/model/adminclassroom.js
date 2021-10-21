@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 
 var Schema1  = mongoose.Schema;
 
-var bookingsschema= new Schema1(
+var bookingSchema= new Schema1(
     {
     user_name:String,
     start:Date,
@@ -26,7 +26,7 @@ var view = new Schema1({
         type:Number,
         required:true
     },
-    bookings:[bookingsschema]
+    bookings:[bookingSchema]
 });
 view.index(
     {
@@ -37,5 +37,7 @@ view.index(
     }
 );
 
+const classroom = mongoose.model('classroom',view) ;
+const classbooking= mongoose.model('classbooking',bookingSchema);
 
-module.exports = mongoose.models.classroom || mongoose.model('classrooms',view);
+module.exports={classroom,classbooking}
