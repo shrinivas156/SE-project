@@ -1,0 +1,19 @@
+{
+  "name": "se-project",
+  "version": "1.0.0",
+  "description": "Name|RollNO\r --------------|--------------\r Shrinivas Bagadi| 191CS156\r Darshan A V| 191CS219\r Shyam Sundar N R| 191CS157\r Lokeshwar Reddy| 191CS161\r Karthik Chandra| 191CS222\r ## Project Objective\r - The objective of this project is to create a web-based application to manage classroom bookings, Hostels booking, Seminar Halls booking, Guest room booking, and sports booking at NITK.\r - The purpose of this project is to reduce manual work with papers and documents.\r ## Project Description\r The project is aimed to minimize the manual work, the number of people involved, and paperwork while booking a guest room, seminar hall, or a classroom in the institution. It also extends to features like booking a sports court and selecting a mess of the user's preference (once per month).",
+  "main": "react.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avd30675/SE-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avd30675/SE-project/issues"
+  },
+  "homepage": "https://github.com/avd30675/SE-project#readme"
+}

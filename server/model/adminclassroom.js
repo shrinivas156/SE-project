@@ -7,9 +7,6 @@ var bookingSchema= new Schema1(
     user_name:String,
     start:Date,
     end:Date
-    },
-    {
-        timestamps:true
     }
 );
 
@@ -28,6 +25,7 @@ var view = new Schema1({
     },
     bookings:[bookingSchema]
 });
+
 view.index(
     {
         block:1,
@@ -36,7 +34,6 @@ view.index(
         unique:true,
     }
 );
-
 const classroom = mongoose.model('classroom',view) ;
 const classbooking= mongoose.model('classbooking',bookingSchema);
 

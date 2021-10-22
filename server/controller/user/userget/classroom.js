@@ -1,4 +1,4 @@
-const pointer= require('../../model/adminclassroom');
+const pointer= require('../../../model/adminclassroom');
 
 exports.userclass=  (req,res) => {
     
