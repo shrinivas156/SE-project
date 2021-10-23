@@ -18,7 +18,7 @@ app.use((req,res,next)=>{
 
 app.use ('/',approuter);
 
-mongoose.connect('mongodb+srv://Shrinivas6612:Shri@505603606@cluster0.vjdpp.mongodb.net/Data?retryWrites=true&w=majority).then().catch(err => {throw err;}',
+mongoose.connect('mongodb+srv://Shrinivas6612:Shri@505603606@cluster0.vjdpp.mongodb.net/Data?retryWrites=true&w=majority',
     {useNewUrlParser:true,useUnifiedTopology:true})
     .then(cilent =>{
         app.listen(port , function (){console.log('The server is running on ', port)} );

@@ -1,8 +1,8 @@
-const classroom= require('../../model/adminclassroom');
+const pointer= require('../../model/adminclassroom');
 
 exports.adminclass=  (req,res) => {
     var id=req.body.id;
-    classroom.deleteOne({_id:id}).then(response =>{
+    pointer.classroom.deleteOne({_id:id}).then(response =>{
         
             res.status(200).json({'login':response});
        

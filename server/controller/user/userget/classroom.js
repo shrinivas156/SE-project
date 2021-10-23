@@ -1,6 +1,6 @@
-const pointer= require('../../model/adminclassroom');
+const pointer= require('../../../model/adminclassroom');
 
-exports.adminclass=  (req,res) => {
+exports.userclass=  (req,res) => {
     
     pointer.classroom.find({}).then(response =>{
         

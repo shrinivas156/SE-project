@@ -25,6 +25,20 @@ const updateguest= require('../controller/adminupdate/adminguest');
 const updatehall= require('../controller/adminupdate/adminhall');
 const updatesports= require('../controller/adminupdate/adminsport');
 
+//get user
+const uvclass  = require('../controller/user/userget/classroom');
+
+//user bookin
+ const ubclass=require('../controller/user/userbooking/class');
+
+ //show details imformation
+
+const class_d=require('../controller/showdetails/classroom');
+
+
+
+
+
 
 
 
@@ -54,4 +68,14 @@ router.post('/adminupd/hall',updatehall.adminhall);
 router.post('/adminupd/sports',updatesports.adminsports);
 
 
+
+//user routers
+router.get('/userget/classroom',uvclass.userclass);
+
+
+//user booking
+router.post('/userget/classroom/booking',ubclass.classbook);
+
+//user showing perticular room details
+router.get('/userget/classroom/:classid',class_d.adminclass)
 module.exports= router;

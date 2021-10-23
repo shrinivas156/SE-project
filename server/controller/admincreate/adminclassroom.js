@@ -1,10 +1,10 @@
-const classroom= require('../../model/adminclassroom');
+const pointer= require('../../model/adminclassroom');
 
 exports.adminclass=  (req,res) => {
     var block= req.body.block;
     var room =req.body.room;
     var capacity = req.body.capacity;
-    classroom.create({block:block,room:room,capacity:capacity}).then(response =>{
+    pointer.classroom.create({block:block,room:room,capacity:capacity}).then(response =>{
         
             res.status(200).json({'login':response});
        
