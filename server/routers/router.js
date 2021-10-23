@@ -32,9 +32,10 @@ const uvclass  = require('../controller/user/userget/classroom');
  const ubclass=require('../controller/user/userbooking/class');
 
  //show details imformation
-
 const class_d=require('../controller/showdetails/classroom');
-
+const seminarhall_d = require('../controller/showdetails/seminarhall');
+const sports_d = require('../controller/showdetails/sports');
+const guest_d = require('../controller/showdetails/guest');
 
 
 
@@ -77,5 +78,10 @@ router.get('/userget/classroom',uvclass.userclass);
 router.post('/userget/classroom/booking',ubclass.classbook);
 
 //user showing perticular room details
-router.get('/userget/classroom/:classid',class_d.adminclass)
+router.get('/userget/classroom/:classid',class_d.adminclass);
+router.get('/userget/seminarhall/:hallid',seminarhall_d.adminhall);
+router.get('/userget/sports/:sportsid',sports_d.adminsports);
+router.get('/userget/guesthouse/:guestid',guest_d.adminguest);
+
+
 module.exports= router;
