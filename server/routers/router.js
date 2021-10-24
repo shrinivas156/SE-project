@@ -32,11 +32,19 @@ const uvclass  = require('../controller/user/userget/classroom');
  const ubclass=require('../controller/user/userbooking/class');
 
  //show details imformation
-const class_d=require('../controller/showdetails/classroom');
-const seminarhall_d = require('../controller/showdetails/seminarhall');
-const sports_d = require('../controller/showdetails/sports');
-const guest_d = require('../controller/showdetails/guest');
 
+const class_d=require('../controller/showdetails/classroom');
+
+//show users booking 
+
+const user_bc=require('../controller/user/userbooking/userbookings/class')
+
+//updating user booking
+const user_cu=require('../controller/user/userbooking/updates/class')
+
+//deleting user booking
+
+const user_cd=require('../controller/user/userbooking/userbookingdelete/class')
 
 
 
@@ -77,11 +85,24 @@ router.get('/userget/classroom',uvclass.userclass);
 //user booking
 router.post('/userget/classroom/booking',ubclass.classbook);
 
+//user booking details
+router.post('/userget/classroom/booking/userbookings',user_bc.class)
+
 //user showing perticular room details
+<<<<<<< HEAD
 router.get('/userget/classroom/:classid',class_d.adminclass);
 router.get('/userget/seminarhall/:hallid',seminarhall_d.adminhall);
 router.get('/userget/sports/:sportsid',sports_d.adminsports);
 router.get('/userget/guesthouse/:guestid',guest_d.adminguest);
 
 
+=======
+router.get('/userget/classroom/:classid',class_d.adminclass)
+
+//updateing booking
+router.post('/userget/classroom/booking_update',user_cu.class)
+
+//deleting user booking
+router.post('/userget/classroom/bookings_delete',user_cd.class)
+>>>>>>> 847fa8c424697872eb3feef2a17ab3ff0f8b0be1
 module.exports= router;
