@@ -27,9 +27,15 @@ const updatesports= require('../controller/adminupdate/adminsport');
 
 //get user
 const uvclass  = require('../controller/user/userget/classroom');
+const uvseminar  = require('../controller/user/userget/seminar');
+const uvguest  = require('../controller/user/userget/guest');
+const uvsports  = require('../controller/user/userget/sports');
 
 //user bookin
- const ubclass=require('../controller/user/userbooking/class');
+const ubclass=require('../controller/user/userbooking/class');
+const ubseminar=require('../controller/user/userbooking/seminar');
+const ubguest=require('../controller/user/userbooking/guest');
+const ubsports=require('../controller/user/userbooking/sports');
 
  //show details imformation
 
@@ -41,19 +47,22 @@ const guest_d = require('../controller/showdetails/guest');
 //show users booking 
 
 const user_bc=require('../controller/user/userbooking/userbookings/class')
+const user_bs=require('../controller/user/userbooking/userbookings/seminar')
+const user_bg=require('../controller/user/userbooking/userbookings/guest')
+const user_bsp=require('../controller/user/userbooking/userbookings/sports')
 
 //updating user booking
 const user_cu=require('../controller/user/userbooking/updates/class')
 const user_su=require('../controller/user/userbooking/updates/seminar')
 const user_gu=require('../controller/user/userbooking/updates/guest')
-const user_spu=require('../controller/user/userbooking/updates/sport')
+const user_spu=require('../controller/user/userbooking/updates/sports')
 
 //deleting user booking
 
 const user_cd=require('../controller/user/userbooking/userbookingdelete/class')
 const user_sd=require('../controller/user/userbooking/userbookingdelete/seminar')
 const user_gd=require('../controller/user/userbooking/userbookingdelete/guest')
-const user_spd=require('../controller/user/userbooking/userbookingdelete/sport')
+const user_spd=require('../controller/user/userbooking/userbookingdelete/sports')
 
 
 
@@ -89,13 +98,22 @@ router.post('/adminupd/sports',updatesports.adminsports);
 
 //user routers
 router.get('/userget/classroom',uvclass.userclass);
+router.get('/userget/seminarhall',uvseminar.userseminar);
+router.get('/userget/guesthouse',uvguest.userguest);
+router.get('/userget/sports',uvsports.usersports);
 
 
 //user booking
 router.post('/userget/classroom/booking',ubclass.classbook);
+router.post('/userget/seminarhall/booking',ubseminar.seminarbook);
+router.post('/userget/guesthouse/booking',ubguest.guestbook);
+router.post('/userget/sports/booking',ubsports.sportbook);
 
 //user booking details
 router.post('/userget/classroom/booking/userbookings',user_bc.class)
+router.post('/userget/seminarhall/booking/userbookings',user_bs.seminar)
+router.post('/userget/guesthouse/booking/userbookings',user_bg.guest)
+router.post('/userget/sports/booking/userbookings',user_bsp.sports)
 
 //user showing perticular room details
 
