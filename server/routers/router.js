@@ -92,14 +92,11 @@ router.post('/userget/classroom/booking',ubclass.classbook);
 router.post('/userget/classroom/booking/userbookings',user_bc.class)
 
 //user showing perticular room details
-<<<<<<< HEAD
 router.get('/userget/classroom/:classid',class_d.adminclass);
 router.get('/userget/seminarhall/:hallid',seminarhall_d.adminhall);
 router.get('/userget/sports/:sportsid',sports_d.adminsports);
 router.get('/userget/guesthouse/:guestid',guest_d.adminguest);
 
-
-=======
 router.get('/userget/classroom/:classid',class_d.adminclass)
 
 //updateing booking
@@ -107,5 +104,5 @@ router.post('/userget/classroom/booking_update',user_cu.class)
 
 //deleting user booking
 router.post('/userget/classroom/bookings_delete',user_cd.class)
->>>>>>> 847fa8c424697872eb3feef2a17ab3ff0f8b0be1
+
 module.exports= router;
