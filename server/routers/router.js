@@ -34,6 +34,9 @@ const uvclass  = require('../controller/user/userget/classroom');
  //show details imformation
 
 const class_d=require('../controller/showdetails/classroom');
+const seminarhall_d = require('../controller/showdetails/seminarhall');
+const sports_d = require('../controller/showdetails/sports');
+const guest_d = require('../controller/showdetails/guest');
 
 //show users booking 
 
