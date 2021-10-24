@@ -4,7 +4,7 @@ exports.adminhall = (req,res) => {
 
     const id = req.params.hallid;
 
-    pointer.seminarhall.findOne({_id:id}).then(response =>{
+    pointer.seminar.findOne({_id:id}).then(response =>{
         
         res.status(200).json(response);
    

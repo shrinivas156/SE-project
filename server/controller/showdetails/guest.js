@@ -4,7 +4,7 @@ exports.adminguest = (req,res) => {
 
     const id = req.params.guestid;
 
-    pointer.guesthouse.findOne({_id:id}).then(response =>{
+    pointer.guest.findOne({_id:id}).then(response =>{
         
         res.status(200).json(response);
    

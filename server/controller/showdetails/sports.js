@@ -4,7 +4,7 @@ exports.adminsports = (req,res) => {
 
     const id = req.params.sportid;
 
-    pointer.sports.findOne({_id:id}).then(response =>{
+    pointer.sport.findOne({_id:id}).then(response =>{
         
         res.status(200).json(response);
    
