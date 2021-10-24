@@ -2,7 +2,7 @@ const pointer = require('../../model/adminsports');
 
 exports.adminsports = (req,res) => {
 
-    const id = req.params.sportid;
+    const id = req.params.sportsid;
 
     pointer.sport.findOne({_id:id}).then(response =>{
         
