@@ -35,7 +35,16 @@ const uvclass  = require('../controller/user/userget/classroom');
 
 const class_d=require('../controller/showdetails/classroom');
 
+//show users booking 
 
+const user_bc=require('../controller/user/userbooking/userbookings/class')
+
+//updating user booking
+const user_cu=require('../controller/user/userbooking/updates/class')
+
+//deleting user booking
+
+const user_cd=require('../controller/user/userbooking/userbookingdelete/class')
 
 
 
@@ -76,6 +85,15 @@ router.get('/userget/classroom',uvclass.userclass);
 //user booking
 router.post('/userget/classroom/booking',ubclass.classbook);
 
+//user booking details
+router.post('/userget/classroom/booking/userbookings',user_bc.class)
+
 //user showing perticular room details
 router.get('/userget/classroom/:classid',class_d.adminclass)
+
+//updateing booking
+router.post('/userget/classroom/booking_update',user_cu.class)
+
+//deleting user booking
+router.post('/userget/classroom/bookings_delete',user_cd.class)
 module.exports= router;
