@@ -27,5 +27,7 @@ var view = new Schema1({
 });
 
 
+const guest = mongoose.model('guest',view) ;
+const guestbooking= mongoose.model('guestbooking',bookingsschema);
 
-module.exports = mongoose.models.guest || mongoose.model('guest',view);
+module.exports={guest,guestbooking}

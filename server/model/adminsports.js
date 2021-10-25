@@ -38,5 +38,7 @@ view.index(
     }
 );
 
+const sport = mongoose.model('sport',view) ;
+const sportbooking= mongoose.model('sportbooking',bookingsschema);
 
-module.exports = mongoose.models.sport || mongoose.model('sport',view);
+module.exports={sport,sportbooking}

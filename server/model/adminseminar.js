@@ -28,5 +28,7 @@ var view = new Schema1({
     
 });
 
+const seminar = mongoose.model('seminar',view) ;
+const seminarbooking= mongoose.model('seminarbooking',bookingsschema);
 
-module.exports = mongoose.models.seminar || mongoose.model('seminar',view);
+module.exports={seminar,seminarbooking}
