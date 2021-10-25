@@ -1,31 +1,31 @@
-const ptr=require('../../../../model/adminclassroom');
+const ptr=require('../../../../model/adminclassroom')
 
-exports.class=(req,res)=>{
+exports.class =(req,res)=>{
 
     const class_id=req.body.class;
     const book_id=req.body.book;
-    const new_start=req.body.start;
-    const new_end=req.body.end;
-    
+    const start=req.body.start;
+    const end=req.body.end;
+    console.log(class_id);
     ptr.classroom.findOne({_id:class_id}).then((result)=>{
     
-        result.bookings=result.bookings.filter(x=>{
-            return (x._id!=book_id);
-        })
-        
-        
+        console.log(result.bookings);
+        result.bookings.forEach(element => {
+            if(element._id==book_id){
+               element.start=start;
+               element.end=end;
+            }
+        });
         result.save();
-        ptr.classbooking.findOneAndUpdate({_id:book_id},{ start:new_start},{useFindAndModify:false}).then((response)=>{  
-             result.bookings.push(response);
-             result.save();
-             console.log(response);
-             
-        }).catch((err)=>{
-            console.log(err);
+
+        ptr.classbooking.findOne({_id:book_id}).then((response)=>{
+            response.start=start;
+            response.end=end;
+            response.save();
         })
-        
-        res.status(200).send("darshan");
+        res.status(200).send("updated");l
     }).catch((err)=>{
         console.log(err);
     })
+
 }
