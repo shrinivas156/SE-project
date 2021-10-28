@@ -7,7 +7,7 @@ exports.seminar=(req,res)=>{
     
     ptr.seminar.findOne({_id:seminar_id}).then((result)=>{
     
-        result.bookings=result.bookings.filter(x=>{
+        result.booking=result.booking.filter(x=>{
             return (x._id!=book_id);
         })
         
