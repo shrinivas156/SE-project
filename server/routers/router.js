@@ -33,7 +33,7 @@ const uvsports  = require('../controller/user/userget/sports');
 
 //user bookin
 const ubclass=require('../controller/user/userbooking/class');
-// const ubseminar=require('../controller/user/userbooking/seminar');
+const ubseminar=require('../controller/user/userbooking/seminar');
 const ubguest=require('../controller/user/userbooking/guest');
 const ubsports=require('../controller/user/userbooking/sports');
 
@@ -53,9 +53,9 @@ const user_bsp=require('../controller/user/userbooking/userbookings/sports');
 
 //updating user booking
 const user_cu=require('../controller/user/userbooking/updates/class');
-// const user_su=require('../controller/user/userbooking/updates/seminar');
-// const user_gu=require('../controller/user/userbooking/updates/guest');
-// const user_spu=require('../controller/user/userbooking/updates/sports');
+const user_su=require('../controller/user/userbooking/updates/seminar');
+const user_gu=require('../controller/user/userbooking/updates/guest');
+const user_spu=require('../controller/user/userbooking/updates/sports');
 
 //deleting user booking
 
@@ -105,7 +105,7 @@ router.get('/userget/sports',uvsports.usersports);
 
 //user booking
 router.post('/userget/classroom/booking',ubclass.classbook);
-// router.post('/userget/seminarhall/booking',ubseminar.seminarbook); --error
+router.post('/userget/seminarhall/booking',ubseminar.seminarbook);
 router.post('/userget/guesthouse/booking',ubguest.guestbook);
 router.post('/userget/sports/booking',ubsports.sportbook);
 
@@ -122,11 +122,11 @@ router.get('/userget/seminarhall/:hallid',seminarhall_d.adminhall);
 router.get('/userget/sports/:sportsid',sports_d.adminsports);
 router.get('/userget/guesthouse/:guestid',guest_d.adminguest);
 
-//updateing booking --error
+//updateing booking
 router.post('/userget/classroom/booking_update',user_cu.class);
-// router.post('/userget/seminarhall/booking_update',user_su.seminar);
-// router.post('/userget/guesthouse/booking_update',user_gu.guest);
-// router.post('/userget/sports/booking_update',user_spu.sports);
+router.post('/userget/seminarhall/booking_update',user_su.seminar);
+router.post('/userget/guesthouse/booking_update',user_gu.guest);
+router.post('/userget/sports/booking_update',user_spu.sports);
 
 //deleting user booking
 router.post('/userget/classroom/bookings_delete',user_cd.class);
